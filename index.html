@@ -12,6 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/script.js"></script>
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -39,9 +40,14 @@
 
           <!-- Sign-up form start -->
           <form class="newsletter-form">
-            <label for="newsletter-input" class="newsletter-label"
-              >Email address</label
-            >
+            <div class="labels">
+              <label for="newsletter-input" class="newsletter-label"
+                >Email address</label
+              >
+              <p class="newsletter-label error-message hidden">
+                Valid email required
+              </p>
+            </div>
             <input
               type="email"
               name="newsletter-input"

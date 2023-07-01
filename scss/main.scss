@@ -87,6 +87,21 @@ body {
   cursor: pointer;
 }
 
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labels p {
+  font-size: 1.2rem;
+  color: $tomato;
+  margin-bottom: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .btn-submit:hover,
 .btn-submit:active {
   background: linear-gradient(to right, #ff5476, #ff673e);
