@@ -1,2 +1,94 @@
 @import "./resets";
 @import "./variables";
+
+body {
+  font-family: $font-roboto;
+  background-color: $grey-darkSlate;
+}
+
+.container {
+  height: 100vh;
+  @include flexCenter;
+}
+
+.app-container {
+  width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  padding: 3.6rem;
+  border-radius: 1.6rem;
+  gap: 1.6rem;
+}
+
+.newsletter-description--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3.2rem;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: $font-weight--bold;
+  margin-bottom: 1.6rem;
+}
+
+.app-container {
+  p {
+    font-size: $paragraph-default;
+    margin-bottom: 1.6rem;
+    color: $grey-charcoal;
+  }
+}
+
+.newsletter-list {
+  font-size: $paragraph-default;
+  list-style-position: inside;
+  padding: 0;
+  list-style-type: none;
+}
+
+.newsletter-list--item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: $grey-charcoal;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-label {
+  font-size: 1.2rem;
+  font-weight: $font-weight--bold;
+  margin-bottom: 0.8rem;
+}
+
+.newsletter-input {
+  padding: 1.6rem;
+  border-radius: 0.6rem;
+  border: 1px $grey solid;
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+}
+
+.btn-submit {
+  font-size: $paragraph-default;
+  background-color: $grey-darkSlate;
+  border: none;
+  color: $white;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.6rem;
+  font-weight: $font-weight--bold;
+  cursor: pointer;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  background: linear-gradient(to right, #ff5476, #ff673e);
+  box-shadow: 0px 0px 12px 0px #ff673e;
+}
