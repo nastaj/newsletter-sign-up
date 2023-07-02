@@ -171,17 +171,6 @@ body {
   font-size: 1.4rem;
 }
 
-.btn {
-  font-size: 16px;
-  background-color: hsl(234, 29%, 20%);
-  border: none;
-  color: hsl(0, 0%, 100%);
-  padding: 1.6rem 3.2rem;
-  border-radius: 0.6rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
 .labels {
   display: flex;
   justify-content: space-between;
@@ -195,6 +184,17 @@ body {
 
 .success-icon {
   margin-bottom: 2.4rem;
+}
+
+.btn {
+  font-size: 16px;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -211,14 +211,29 @@ body {
   display: none;
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
   .sign-up-state {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100vw;
   }
   .hidden {
     display: none;
+  }
+  .newsletter-description--container {
+    padding-left: 0;
+    padding: 1.6rem;
+  }
+  .illustration-container {
+    grid-row: 1;
+  }
+  .illustration {
+    height: 45vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=main.css.map */

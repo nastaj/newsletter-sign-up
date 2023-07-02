@@ -34,8 +34,10 @@ formInput.addEventListener("focus", () => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
   inputValue = formInput.value;
   confirmationEmailEl.textContent = inputValue;
+
   signUpState.classList.add("hidden");
   successState.classList.remove("hidden");
 });
