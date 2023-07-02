@@ -31,3 +31,8 @@ Responsive newsletter sign-up form with success message, utilizing two different
 - Flexbox
 - Grid
 - JavaScript
+
+## Author
+
+- Frontend Mentor - [@nastaj](https://www.frontendmentor.io/profile/nastaj)
+- Discord - [@aseirel]
