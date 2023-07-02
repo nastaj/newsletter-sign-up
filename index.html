@@ -20,21 +20,22 @@
   </head>
   <body>
     <div class="container">
-      <main class="app-container">
+      <main class="sign-up-state">
         <section class="newsletter-description--container">
           <h1 class="heading-primary">Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <ul class="newsletter-list">
             <li class="newsletter-list--item">
-              <img src="assets/images/icon-list.svg" alt="" />
+              <img src="assets/images/icon-list.svg" alt="List icon" />
               Product discovery and building what matters
             </li>
             <li class="newsletter-list--item">
-              <img src="assets/images/icon-list.svg" alt="" />
+              <img src="assets/images/icon-list.svg" alt="List icon" />
               Measuring to ensure updates are a success
             </li>
             <li class="newsletter-list--item">
-              <img src="assets/images/icon-list.svg" alt="" />And much more!
+              <img src="assets/images/icon-list.svg" alt="List icon" />And much
+              more!
             </li>
           </ul>
 
@@ -55,7 +56,7 @@
               placeholder="email@company.com"
               required
             />
-            <button class="btn-submit" type="submit">
+            <button class="btn btn-submit" type="submit">
               Subscribe to monthly newsletter
             </button>
           </form>
@@ -68,6 +69,21 @@
             alt="Illustration showing charts and desktop windows"
           />
         </div>
+      </main>
+
+      <main class="success-state hidden">
+        <img
+          class="success-icon"
+          src="assets/images/icon-success.svg"
+          alt="Success icon"
+        />
+        <h1 class="heading-primary">Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span class="confirmation-email">ash@loremcompany.com</span>. Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+        <button class="btn btn-dismiss">Dismiss message</button>
       </main>
     </div>
 

@@ -11,7 +11,7 @@ body {
   @include flexCenter;
 }
 
-.app-container {
+.sign-up-state {
   width: 100rem;
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,29 @@ body {
   padding: 3.6rem;
   border-radius: 1.6rem;
   gap: 1.6rem;
+  p {
+    font-size: $paragraph-default;
+    margin-bottom: 1.6rem;
+    color: $grey-charcoal;
+  }
+}
+
+.success-state {
+  width: 50rem;
+  height: 50rem;
+  background-color: $white;
+  padding: 5.6rem;
+  border-radius: 1.6rem;
+
+  p {
+    font-size: $paragraph-default;
+    margin-bottom: 2.4rem;
+    color: $grey-charcoal;
+  }
+
+  span {
+    font-weight: $font-weight--bold;
+  }
 }
 
 .newsletter-description--container {
@@ -29,17 +52,10 @@ body {
 }
 
 .heading-primary {
+  line-height: 1.2;
   font-size: 4.8rem;
   font-weight: $font-weight--bold;
-  margin-bottom: 1.6rem;
-}
-
-.app-container {
-  p {
-    font-size: $paragraph-default;
-    margin-bottom: 1.6rem;
-    color: $grey-charcoal;
-  }
+  margin-bottom: 2.4rem;
 }
 
 .newsletter-list {
@@ -76,7 +92,7 @@ body {
   font-size: 1.4rem;
 }
 
-.btn-submit {
+.btn {
   font-size: $paragraph-default;
   background-color: $grey-darkSlate;
   border: none;
@@ -98,12 +114,31 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.success-icon {
+  margin-bottom: 2.4rem;
+}
+
+.btn:hover,
+.btn:active {
+  background: linear-gradient(to right, #ff5476, #ff673e);
+  box-shadow: 0px 0px 12px 0px #ff673e;
+}
+
+.btn-dismiss {
+  width: 100%;
+}
+
 .hidden {
   display: none;
 }
 
-.btn-submit:hover,
-.btn-submit:active {
-  background: linear-gradient(to right, #ff5476, #ff673e);
-  box-shadow: 0px 0px 12px 0px #ff673e;
+// Media queries
+@media (max-width: 550px) {
+  .sign-up-state {
+    @include flexCenter(column);
+  }
+
+  .hidden {
+    display: none;
+  }
 }
